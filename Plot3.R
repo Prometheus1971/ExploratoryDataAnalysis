@@ -25,6 +25,8 @@ makePlot3<- function(){
   
   lines(strptime(targetDays$TimeStamp,"%Y-%m-%d %H:%M:%S"),targetDays$Sub_metering_2, type="l", col="red")
   
+  lines(strptime(targetDays$TimeStamp,"%Y-%m-%d %H:%M:%S"),targetDays$Sub_metering_3, type="l", col="blue")
+  
   
   
 }
