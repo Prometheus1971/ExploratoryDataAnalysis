@@ -1,4 +1,5 @@
 #Plot3.R
+library(dplyr)
 
 #Function to Load the house hold power data and create Plot3
 makePlot3<- function(){
@@ -27,6 +28,9 @@ makePlot3<- function(){
   
   lines(strptime(targetDays$TimeStamp,"%Y-%m-%d %H:%M:%S"),targetDays$Sub_metering_3, type="l", col="blue")
   
-  
+  legend("topright", lty= 1, col = c("Black", "red", "blue"),cex=.70, legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   
 }
+
+
+
